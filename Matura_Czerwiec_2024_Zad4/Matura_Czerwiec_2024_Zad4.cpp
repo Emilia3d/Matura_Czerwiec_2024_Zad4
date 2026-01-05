@@ -61,49 +61,22 @@ int main()
         }
         cout << endl;
     }
-/*
-    int pakiet = N;
 
-    int przesylanie[50][N + 1];
-
-    //runda 1-sza
-    for (int pakiet = 0; pakiet < N; pakiet++) {
-        przesylanie[1][pakiet] = odbiorcy[pakiet];
-        cout << przesylanie[1][pakiet] << endl;
-    }
     
-    for (int runda = 2; runda <= 5; runda++) {
-        for (int pakiet = 0; pakiet < N; pakiet++) {
-            przesylanie[runda][pakiet] = odbiorcy[przesylanie[runda - 1][pakiet]];
-            //if (przesylanie[runda][pakiet] == pakiet) {
-                cout << runda << "-> " << pakiet<<" "<< przesylanie[runda][pakiet]<<endl;
-            //}
-        }
-        cout << endl;
-    }
-
-    /*
     cout << "Zad 4.4" << endl;
     vector <int> zad4_4_runda1;
     vector <int> zad4_4_runda2;
     vector <int> zad4_4_runda4;
     vector <int> zad4_4_runda8;
 
-    //wypisujemy i sortujemy wartości dla każdej rundy
+    //wypisujemy i sortujemy wartości dla każdej rundy 2
     for (int pakiet = 1; pakiet <= N; pakiet++) {
-        zad4_4_runda1.push_back(przesylanie[2][pakiet]);
+        zad4_4_runda1.push_back(przesylanie[2][pakiet-1]);
     }
 
-    for (int i = 1; i <= N; i++) {
-        for (int j = 1; j <=N; j++) {
-            cout << przesylanie[i][j];
-        }
-        cout << endl;
-    }
-    //sort(zad4_4_runda1.begin(), zad4_4_runda1.end());
-    //// Wyszukujemy najczęstszą wartość
-    //
-    //for (int i = 0; i < zad4_4_runda1.size(); i++)
-    //    cout << zad4_4_runda1[i]<<endl;
-    */
+    sort(zad4_4_runda1.begin(), zad4_4_runda1.end());
+    //Wyszukujemy najczęstszą wartość
+    for (int i = 1; i < zad4_4_runda1.size(); i++)
+        cout << zad4_4_runda1[i]<<endl;
+    
 }
