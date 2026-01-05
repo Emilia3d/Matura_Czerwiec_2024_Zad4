@@ -39,14 +39,14 @@ int main()
         cout << odbiorcy[i]<<endl;
     }
     
-    cout << "Zad 4.3" << endl;
+    cout << "Zad 4.3" << "r-runda, p-pakiet "<<endl;
     
     int pakiet = N;
 
     int przesylanie[101][N + 1];
 
     for (int pakiet = 1; pakiet <= N; pakiet++) {
-        przesylanie[1][pakiet] = odbiorcy[pakiet - 1];
+        przesylanie[1][pakiet] = odbiorcy[pakiet - 1];//pakiet-1, bo naprawdę są liczone od 0
 
     }
 
