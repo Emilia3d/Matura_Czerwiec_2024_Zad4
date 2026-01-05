@@ -58,7 +58,6 @@ int main()
                 //cout << runda << " " << pakiet << endl;
             //return 0;
             //}
-
         }
         cout << endl;
     }
