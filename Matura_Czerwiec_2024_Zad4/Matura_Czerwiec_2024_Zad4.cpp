@@ -102,4 +102,9 @@ int main()
     int m8 = Dominanta(runda8);
 
     cout << m1 << " " << m2 << " " << m4 << " " << m8 << "\n";
+
+
+    cout << "Zad.6 - podp." << endl;
+    cout<<stoi("203", nullptr, 5) + stoi("4401", nullptr, 5) << endl;
+    cout << stoi("4541", nullptr, 6) - stoi("2455", nullptr, 6) << endl;
 }
